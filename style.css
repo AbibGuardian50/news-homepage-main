@@ -1,0 +1,324 @@
+* {
+    Font-size: 15px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400, 700, 800;
+    line-height: 1.428;
+}
+
+.bottom-content {
+    grid-area: bottom-content;
+    margin-top: 30px;
+    display: flex;
+    width: 80em;
+}
+
+.bottom-content h5 {
+    font-weight: 800;
+    color: hsl(233, 8%, 79%);
+
+}
+
+.bottom-content p {
+    width: 95%;
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+}
+
+.bottom-content .bottom-article {
+    display: flex;
+    text-align: left;
+}
+
+.bottom-content .bottom-article .btom-p {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#btom-p01 {
+    width: 300px;
+}
+
+.bottom-content .bottom-article .btom-p p {
+    width: 70%;
+}
+
+.bottom-content p,
+.bottom-content h5,
+.bottom-content h6 {
+    float: right;
+}
+
+.container-bright-future {
+    display: grid;
+    grid-template-areas: "header-main paragraph-main"
+        "header-main paragraph-main";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: "nav-menu nav-menu nav-menu nav-menu "
+        "main-content main-content main-content right-content"
+        "main-content main-content main-content right-content"
+        "bottom-content bottom-content bottom-content bottom-content";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.7fr 0.3fr;
+    column-gap: 15px;
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    margin-left: 120px;
+    margin-top: 10px;
+    max-width: 1200px;
+
+}
+
+.header-main {
+    grid-row-start: 1;
+}
+
+.image-main {
+    width: 100%;
+}
+
+.main-content .image-alt {
+    display: none;
+}
+
+.main-content {
+    grid-area: main-content;
+}
+
+.main-content .container-bright-future .paragraph-main button {
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    padding: 15px 35px 15px 35px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    margin-top: 15px;
+}
+
+.main-content .container-bright-future .paragraph-main button:hover {
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+
+.main-content .container-bright-future .paragraph-main p {
+    width: 96%;
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+}
+
+.main-content .container-bright-future .header-main h2 {
+    font-size: 3.1em;
+    width: 70%;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.nav-menu {
+    grid-area: nav-menu;
+}
+
+.nav-menu .navbar .navbar-link {
+    display: flex;
+    gap: 20px;
+    float: right;
+    margin-top: 24px;
+}
+
+.nav-menu .navbar .navbar-link a {
+    font-weight: 400;
+    color: hsl(236, 13%, 42%);
+    text-decoration: none;
+}
+
+.paragraph-main {
+    grid-row-start: 1;
+}
+
+.pic-bottom {
+    width: 7em;
+    height: auto;
+}
+
+.right-content h3 {
+    color: hsl(35, 77%, 62%);
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.right-content {
+    grid-area: right-content;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    height: 520px;
+    width: 22em;
+}
+
+.right-content p {
+    font-weight: 400;
+    color: hsl(233, 8%, 79%);
+    line-height: 1.7;
+    width: 100%;
+}
+
+.right-content .right-content01 {
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+
+}
+
+.right-content .right-content02 {
+    margin-top: 35px;
+    margin-right: 5px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
+
+.right-content .right-content03 {
+    margin-top: 26px;
+    margin-right: 5px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
+
+.right-content h4,
+.right-content p,
+.right-content h3 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    .attribution p,
+    .attribution a {
+        font-size: 10px;
+    }
+
+    .bottom-content {
+        display: block;
+    }
+
+    .container-bright-future {
+        display: block;
+        width: 90%;
+    }
+
+    .grid-container {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        overflow: hidden;
+        margin-left: 20px;
+    }
+
+    .main-content {
+        width: 95%;
+    }
+
+    .main-content .image-main {
+        width: 85%;
+    }
+
+    .main-content .image-alt {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: none;
+    }
+
+    .main-content .container-bright-future .paragraph-main p {
+        font-size: 1em;
+    }
+
+    .main-content .container-bright-future .header-main h2 {
+        font-size: 2.1em;
+        width: 100%;
+        font-weight: 800;
+        line-height: 1.1;
+    }
+
+    .nav-menu .navbar .navbar-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .attribution p,
+    .attribution a {
+        font-size: 7px;
+    }
+
+    .bottom-content .bottom-article .btom-p p {
+        font-size: 0.875em;
+        width: 190px;
+    }
+
+    .bottom-content .pic-bottom {
+        width: 70px;
+    }
+
+    .grid-container {
+        display: block;
+        width: 90%;
+        height: auto;
+        max-width: 375px;
+        overflow: hidden;
+        margin-left: 25px;
+
+    }
+
+    .main-content .image-alt {
+        display: block;
+    }
+
+    .main-content .container-bright-future .paragraph-main p {
+        font-size: 1em;
+    }
+
+    .main-content .container-bright-future .header-main h2 {
+        font-size: 2.1em;
+        width: 100%;
+        font-weight: 800;
+        line-height: 1.1;
+    }
+
+    .right-content {
+        max-width: 375px;
+    }
+
+    .right-content p {
+        font-size: 0.875em;
+    }
+
+    .right-content .right-content01 {
+        margin-right: 80px;
+    }
+
+    .right-content .right-content02 {
+        margin-right: 55px;
+
+    }
+
+    .right-content .right-content03 {
+        margin-right: 30px;
+    }
+    
+}
